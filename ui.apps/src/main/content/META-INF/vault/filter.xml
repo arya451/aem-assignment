@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aemassignent/clientlibs"/>
+    <filter root="/apps/aemassignent/components"/>
+    <filter root="/apps/aemassignent/i18n"/>
+</workspaceFilter>
