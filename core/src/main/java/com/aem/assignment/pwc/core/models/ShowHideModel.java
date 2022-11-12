@@ -8,8 +8,15 @@ import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
+/**
+ * @author sakshi.arya
+ * 
+ *         Model class to return Show Hide multifield values
+ *
+ */
 @Model(adaptables = { Resource.class })
 public interface ShowHideModel {
+
 	@ChildResource(injectionStrategy = InjectionStrategy.OPTIONAL, name = "names")
 	List<Name> getNames();
 
