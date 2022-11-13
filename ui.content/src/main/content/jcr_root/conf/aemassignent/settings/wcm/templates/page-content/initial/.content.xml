@@ -16,6 +16,9 @@
                 <title
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemassignent/components/title"/>
+                <showhide
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemassignent/components/showhide"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemassignent/components/container"

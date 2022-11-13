@@ -1,21 +1,16 @@
 <!--/* Show Hide Component */-->
 <sly data-sly-use.showHide="com.aem.assignment.pwc.core.models.ShowHideModel" data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-call="${template.placeholder @ isEmpty=!properties.selectedOption, classAppend='cq-placeholder'}"/>
 
-<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="Show Hide Component"></div>
-
 <div>
     <sly data-sly-test="${properties.selectedOption == 'textimage'}">
-        <b>Text and Image Variation</b>
-        <ul>
-        	<li> Text : ${properties.text}
-            <li> Image : <img src="${properties.imageRef}" alt="alt text" width="500" height="600">  </li>
-        </ul>
+        <b>Text - Image Variation</b><hr>
+        <p style="margin-left:100px">${properties.text}</p>
+        <img src="${properties.imageRef}" alt="image" width="500" height="600">
     </sly>
     <sly data-sly-test="${properties.selectedOption == 'multifield'}">
-        <b>Multifield Variation</b>
+        <b>Multifield Variation</b><hr>
         <ul data-sly-list.item="${showHide.getNames}">
-        	<li>${item.firstName}</li>
-            <li>${item.lastName}</li>
+        	<li>${item.firstName} ${item.lastName}</li>
 		</ul>
     </sly>
 </div>

@@ -9,3 +9,4 @@ Component Title - Show Hide Component
 Below are the files that are related to Show Hide component.
 * core: /core/src/main/java/com/aem/assignment/pwc/core/models/ShowHideModel.java
 * ui.apps: ui.apps/src/main/content/jcr_root/apps/aemassignent/components/showhide
+* ui.content: ui.content/src/main/content/jcr_root/content/aemassignent/us/en
